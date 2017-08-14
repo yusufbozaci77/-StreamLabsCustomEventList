@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=$font_family");
+
+html{
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+overflow: hidden;
+position: relative;
+}
+body{
+width: 125%;
+height: 100%;
+padding: 0;
+margin: 0;
+font-weight: 400;
+font-size: $font_size;
+font-family: "$font_family";
+text-overflow: ellipsis;
+list-style: none;
+padding: 0;
+text-transform: uppercase;
+position: absolute;
+}
+
+html, .widget-EventList li {
+    transform: rotateX($rotate_x) rotateY($rotate_y);
+}
+
+.widget-EventList, .widget-EventList * {
+    box-sizing: border-box;
+}
+.background{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+background: $background_color;
+}
+.widget-EventList li{
+line-height: 40px;
+height: 40px;
+overflow: hidden;
+text-overflow: ellipsis;
+width:calc(20% - 5px);
+margin-left: 5px;
+text-align: left;
+display: inline-block;
+white-space: nowrap;
+color: $text_color;
+position: relative;
+transition: 1s;
+}
+
+.widget-EventList li:first-child{
+width:20%;
+margin-left: 0px;
+animation: 1s grow;
+}
+
+.widget-EventList .tag {
+position: absolute;
+top: 0px;
+right: 0px;
+float: left;
+margin: 0 0.5em;
+display: inline-block;
+text-overflow: ellipsis;
+font-size: 18px !important;
+z-index: 10;
+}
+
+.widget-EventList .message {
+float: left;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0 0.5em;
+display: inline-block;
+position: relative;
+padding-right: 8px;
+z-index: 10;
+}
+
+@keyframes grow {
+0% {
+width: 0;
+color: transparent;
+}
+30%{
+color: transparent;
+}
+}
+
+
