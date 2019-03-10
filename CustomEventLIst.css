@@ -7,20 +7,21 @@ padding: 0;
 margin: 0;
 overflow: hidden;
 position: relative;
+background: transparent !important
 }
 body{
-width: 125%;
+width: 125% !important;
 height: 100%;
-padding: 0;
-margin: 0;
+padding: 0 !important;
+margin: 0 !important;
 font-weight: 400;
 font-size: $font_size;
 font-family: "$font_family";
 text-overflow: ellipsis;
 list-style: none;
-padding: 0;
 text-transform: uppercase;
 position: absolute;
+background: transparent !important
 }
 
 html, .widget-EventList li {
@@ -39,15 +40,18 @@ height: 100%;
 z-index: 1;
 background: $background_color;
 }
+.widget-EventList{
+  display: flex;
+}
 .widget-EventList li{
 line-height: 40px;
 height: 40px;
 overflow: hidden;
 text-overflow: ellipsis;
-width:calc(20% - 5px);
-margin-left: 5px;
+width:calc(16% - 8px);
+margin-left: 8px;
 text-align: left;
-display: inline-block;
+display: block;
 white-space: nowrap;
 color: $text_color;
 position: relative;
@@ -55,7 +59,7 @@ transition: 1s;
 }
 
 .widget-EventList li:first-child{
-width:20%;
+width:16%;
 margin-left: 0px;
 animation: 1s grow;
 }
@@ -66,7 +70,7 @@ top: 0px;
 right: 0px;
 float: left;
 margin: 0 0.5em;
-display: inline-block;
+display: block;
 text-overflow: ellipsis;
 font-size: 18px !important;
 z-index: 10;
@@ -78,7 +82,7 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
 margin: 0 0.5em;
-display: inline-block;
+display: block;
 position: relative;
 padding-right: 8px;
 z-index: 10;
@@ -93,5 +97,3 @@ color: transparent;
 color: transparent;
 }
 }
-
-
