@@ -6,10 +6,14 @@ Click the 'Reset Code' button below the code box.
 Paste the code from the CustomEventList.css file into the code box below that on the CSS tab.
 
 From there you can use the options to choose your colors, font, font size, and screen orientation.
-background color will set the box color.
-text color will set the text color. 
-flip x will make the events slide in from right to left
-flip y will put the events list on the bottom of the screen.
+
+'Background Color' will set the box color.
+
+'Text Color' will set the text color. 
+
+'Flip X' will make the events slide in from right to left (default is left to right)
+
+'Flip Y' will put the events list on the bottom of the screen. (default is top of screen)
 
 Make sure max events is set to 6, I recommend about 22px - 24px font size (but ite really depends on the font you use)
 The animation options won't do anything as that is hard coded. 
